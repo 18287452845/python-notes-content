@@ -17,3 +17,10 @@
 - `archive/`
 
 基础课建议按 `01-基础语法` → `02-数据结构` → `03-函数与模块` → `04-文件与异常` → `05-面向对象` → `06-基础项目` 的顺序使用。
+
+## 仓库与网页同步
+
+- 本仓库是 Markdown 内容仓库：`python-notes-content`。
+- 网页模板、构建脚本和生成页面位于独立的 `python-notes-site` 仓库。
+- 修改 Markdown 后，网页仓库会定时拉取本仓库并重新生成网页；配置 `SITE_REPO_DISPATCH_TOKEN` 后可以在提交后立即触发同步。
+- 网页仓库构建成功后通过 GitHub Actions 使用 Wrangler 部署到现有 Cloudflare Pages 项目 `python-notes`。
