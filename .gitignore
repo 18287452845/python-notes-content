@@ -3,3 +3,11 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# 本地工具缓存
+.zcode/
+.playwright-mcp/
+
+# 临时/构建产物（不纳入课程内容）
+tmp/
+output/
